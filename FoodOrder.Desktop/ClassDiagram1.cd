@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FoodOrder.Desktop.Model.FoodOrderAPIService">
+    <Position X="6.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAEQAAAgBAAAAAAAAAAAAAACQIAAAAAA=</HashCode>
+      <FileName>Model\FoodOrderAPIService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.Desktop.Model.NetworkException">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NetworkException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.Desktop.ViewModel.LoginViewModel">
+    <Position X="9.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgACAAAAAACAAAAAAgAAAAAAAAAAAAgEAQAAEACAAAI=</HashCode>
+      <FileName>ViewModel\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_model" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodOrder.Desktop.ViewModel.OrderViewModel">
+    <Position X="15.75" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EABBCAAIAAIAAAAAAAEASAAEAQAAAAQCAABAAGAAAAA=</HashCode>
+      <FileName>ViewModel\OrderViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.Desktop.ViewModel.ProductViewModel">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgACIAAAAQBgAAAECIBAAAQAACAAAAAAAAQAACABAAA=</HashCode>
+      <FileName>ViewModel\ProductViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.Desktop.ViewModel.ViewModelBase">
+    <Position X="9.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAoAAAAAAAgAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FoodOrder.Desktop.ViewModel.MainViewModel">
+    <Position X="12" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>DAMAACABBREgiAQQoABFAAACgAAwAgABAIAQAAgsBIY=</HashCode>
+      <FileName>ViewModel\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_service" />
+      <Field Name="_selectedOrder" />
+      <Field Name="_selectedProduct" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodOrder.Desktop.App">
+    <Position X="7.75" Y="7.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAIEIAAAACAAQAAQAQAAgAAAoAAAAgkAAAAAAAIAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_service" />
+      <Field Name="_mainViewModel" />
+      <Field Name="_loginViewModel" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

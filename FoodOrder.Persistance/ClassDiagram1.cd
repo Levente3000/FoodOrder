@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FoodOrder.Persistance.Category">
+    <Position X="11" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.Persistance.DbInitializer">
+    <Position X="5.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABQCAAAAAQACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbInitializer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodOrder.Persistance.Employees">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.Persistance.FoodOrderDbContext">
+    <Position X="8" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAGAQAEAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>FoodOrderDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.Persistance.Orders">
+    <Position X="3.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAFAAAAAAAIAAAAAAAAAQAAEAQAAAAACAAAAAAAAAAQ=</HashCode>
+      <FileName>Orders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.Persistance.ProductOrder">
+    <Position X="6" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>ProductOrder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodOrder.Persistance.Products">
+    <Position X="8.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgAAAAAIAAAAQAACAAAAAAAAAAACAACAA=</HashCode>
+      <FileName>Products.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodOrder.Persistance.Services.FoodOrderService" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ITAABQAAAAAADAAQIAAAgAAAAAABAAAIAEAAKAAAAAA=</HashCode>
+      <FileName>Services\FoodOrderService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_context" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="FoodOrder.Persistance.Services.IFoodOrderService">
+    <Position X="13.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ITAABQAAAAAACAAQIAAAgAAAAAABAAAIAEAAKAAAAAA=</HashCode>
+      <FileName>Services\IFoodOrderService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

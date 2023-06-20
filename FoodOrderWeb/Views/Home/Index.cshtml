@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model MenuViewModel
+
+@if (Model == null || !Model.Categories.Any())
+{
+    <div class="contentText">Jelenleg nincs elérhető kategória.</div>
+}
+else
+{
+    <table>
+        <strong>Kategóriák:</strong>
+        @for (Int32 i = 0; i < Model.Categories.Count(); i++)
+        {
+            <tr>
+                <td>
+                    <a asp-action="ProductList" asp-route-cn="@Model.Categories[i].Name">@Model.Categories[i].Name</a>
+                    <br>
+                </td>
+            </tr>
+        }
+
+        <tr>
+            <td>
+                <br>
+                @if (TempData.ContainsKey("ErrorMessage"))
+                {
+                    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+                }
+            </td>
+        </tr>
+
+        @for (Int32 i = 0; i < Model.Products.Count(); i++)
+        {
+            <tr>
+                <td>
+                    <strong>Neve: </strong> @Model.Products[i].Name
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Ára: </strong> @Model.Products[i].Price Ft
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Kategóriája: </strong> @Model.Products[i].CategoryName
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @if (@Model.Products[i].Description != null)
+                    {
+                        <strong>Leírása: </strong> @Model.Products[i].Description
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @if (Model.Products[i].CategoryName == "Üdítők")
+                    {
+                        <a asp-action="AddFromMain" asp-controller="ShoppingCart" asp-route-pId="@Model.Products[i].Id" asp-route-cn="@Model.Products[i].CategoryName">Az étel/ital hozzáadása a kosárhoz.</a>
+                        <br>
+                        <br>
+                    }
+                    else
+                    {
+                        <strong>Az étel: </strong>
+                        @if (@Model.Products[i].Spicy == true && @Model.Products[i].Vegetarian == false)
+                        {
+                            <text>csípős </text>
+                        }
+                        else if (@Model.Products[i].Spicy == true && @Model.Products[i].Vegetarian == true)
+                        {
+                            <text>csípős és vegetáriánus</text>
+
+                        }
+                        else if (@Model.Products[i].Spicy == false && @Model.Products[i].Vegetarian == true)
+                        {
+                            <text>vegetáriánus</text>
+                        }
+
+                        else
+                        {
+                            <text>se nem csípős se nem vegetáriánus</text>
+                        }
+                        <br>
+                        <a asp-action="AddFromMain" asp-controller="ShoppingCart" asp-route-pId="@Model.Products[i].Id" asp-route-cn="@Model.Products[i].CategoryName">Az étel/ital hozzáadása a kosárhoz.</a>
+                        <br>
+                        <br>
+                    }
+                </td>
+            </tr>
+           
+        }
+    </table>
+}

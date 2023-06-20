@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FoodOrder.WebAPI.Controllers.AccountController">
+    <Position X="3.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAIAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\AccountController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.WebAPI.Controllers.OrdersController">
+    <Position X="7.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAQAAABAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\OrdersController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_service" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodOrder.WebAPI.Controllers.ProductsController">
+    <Position X="5.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAABAAAAAAAAAAAAQAAACAAAAIA=</HashCode>
+      <FileName>Controllers\ProductsController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_service" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FoodOrder.WebAPI.MappingConfigurations.OrderProfile">
+    <Position X="11.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MappingConfigurations\EntityProfiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.WebAPI.MappingConfigurations.ProductsProfile">
+    <Position X="11.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MappingConfigurations\EntityProfiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.WebAPI.MappingConfigurations.OrderDtoProfile">
+    <Position X="9.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MappingConfigurations\EntityProfiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FoodOrder.WebAPI.MappingConfigurations.ProductDtoProfile">
+    <Position X="9.5" Y="2.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MappingConfigurations\EntityProfiles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FoodOrder.Persistance.Services.IFoodOrderService" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

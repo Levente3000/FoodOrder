@@ -1,0 +1,131 @@
+﻿@using FoodOrderWeb.Models
+
+@{
+    ViewData["Title"] = "ShoppingCart";
+}
+
+@model OrderViewModel
+
+@if (Model == null || !Model.Products.Any())
+{
+    <div class="contentText">Jelenleg nincs semmilyen étel/ital a bevásárlókosárban.</div>
+}
+else
+{
+    <form asp-controller="ShoppingCart" asp-action="Result">
+        <table>
+            <tr>
+                <td colspan="2" valign="middle">
+                    <div asp-validation-summary="ModelOnly" class="failureNotification"></div>
+                    <div class="contentHead">
+                        Rendeléshez szükséges adatok:
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="120">
+                    Név:
+                </td>
+                <td class="failureNotification">
+                    <input asp-for="Name" size="40" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Szállítási cím:
+                </td>
+                <td class="failureNotification">
+                    <input asp-for="Address" size="40" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Telefonszám:
+                </td>
+                <td class="failureNotification">
+                    <input asp-for="PhoneNumber" size="40" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="submit" value="Rendelés véglegesítése" class="button" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <p>Összár: @ViewBag.sumPrice Ft</p>
+    <p>A kosár tartalma, az ételek/italok:</p>
+    <table>
+        @for (Int32 i = 0; i < @Model.Products.Count(); i++)
+        {
+            <tr>
+                <td>
+                    <strong>Neve: </strong> @Model.Products[i].Name
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Ára: </strong> @Model.Products[i].Price Ft
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Kategóriája: </strong> @Model.Products[i].CategoryName
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @if (@Model.Products[i].Description != null)
+                    {
+                        <strong>Leírása: </strong> @Model.Products[i].Description
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @if (Model.Products[i].CategoryName == "Üdítők")
+                    {
+                        <a asp-action="Delete" asp-route-pId="@Model.Products[i].Id">Az étel/ital kivétele a kosárból.</a>
+                        <br>
+                        <br>
+                    }
+                    else
+                    {
+                        <strong>Az étel: </strong>
+                        @if (@Model.Products[i].Spicy == true && @Model.Products[i].Vegetarian == false)
+                        {
+                            <text>csípős </text>
+                        }
+                        else if (@Model.Products[i].Spicy == true && @Model.Products[i].Vegetarian == true)
+                        {
+                            <text>csípős és vegetáriánus</text>
+
+                        }
+                        else if (@Model.Products[i].Spicy == false && @Model.Products[i].Vegetarian == true)
+                        {
+                            <text>vegetáriánus</text>
+                        }
+
+                        else
+                        {
+                            <text>se nem csípős se nem vegetáriánus</text>
+                        }
+                        <br>
+                        <a asp-action="Delete" asp-route-pId="@Model.Products[i].Id">Az étel/ital kivétele a kosárból.</a>
+                        <br>
+                        <br>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodOrderWeb", "FoodOrderWeb\FoodOrderWeb.csproj", "{442E27D1-32F9-47E2-940E-5FB68453640F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodOrder.Persistance", "FoodOrder.Persistance\FoodOrder.Persistance.csproj", "{5A0B4285-B7B4-47D1-8DF1-1C8CF82A393D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodOrder.WebAPI", "FoodOrder.WebAPI\FoodOrder.WebAPI.csproj", "{F1E43297-BD35-459E-9CBE-89CFF1A27878}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodOrder.DTO", "FoodOrder.DTO\FoodOrder.DTO.csproj", "{B682C246-31E8-4FF1-A2B5-9197F1936265}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodOrder.Desktop", "FoodOrder.Desktop\FoodOrder.Desktop.csproj", "{5BDB3386-E0DD-4785-8CA3-828775CB3C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodOrder.WebAPI.Tests", "FoodOrder.WebAPI.Tests\FoodOrder.WebAPI.Tests.csproj", "{6CD3CEF9-C0C6-465D-8621-FFB75FFC55BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{442E27D1-32F9-47E2-940E-5FB68453640F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442E27D1-32F9-47E2-940E-5FB68453640F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442E27D1-32F9-47E2-940E-5FB68453640F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442E27D1-32F9-47E2-940E-5FB68453640F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0B4285-B7B4-47D1-8DF1-1C8CF82A393D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0B4285-B7B4-47D1-8DF1-1C8CF82A393D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0B4285-B7B4-47D1-8DF1-1C8CF82A393D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0B4285-B7B4-47D1-8DF1-1C8CF82A393D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E43297-BD35-459E-9CBE-89CFF1A27878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E43297-BD35-459E-9CBE-89CFF1A27878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E43297-BD35-459E-9CBE-89CFF1A27878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E43297-BD35-459E-9CBE-89CFF1A27878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B682C246-31E8-4FF1-A2B5-9197F1936265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B682C246-31E8-4FF1-A2B5-9197F1936265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B682C246-31E8-4FF1-A2B5-9197F1936265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B682C246-31E8-4FF1-A2B5-9197F1936265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDB3386-E0DD-4785-8CA3-828775CB3C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDB3386-E0DD-4785-8CA3-828775CB3C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDB3386-E0DD-4785-8CA3-828775CB3C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDB3386-E0DD-4785-8CA3-828775CB3C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD3CEF9-C0C6-465D-8621-FFB75FFC55BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD3CEF9-C0C6-465D-8621-FFB75FFC55BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD3CEF9-C0C6-465D-8621-FFB75FFC55BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD3CEF9-C0C6-465D-8621-FFB75FFC55BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD7F9C78-63F6-40F7-B867-D2850B580371}
+	EndGlobalSection
+EndGlobal
